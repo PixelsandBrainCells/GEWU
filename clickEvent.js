@@ -1,1 +1,3 @@
-
+function clickEvent() {
+    alert('label');
+}

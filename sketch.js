@@ -19,10 +19,10 @@
   }
 
   function setup() {
-      createCanvas(281, 406);
+      createCanvas(windowWidth, windowHeight);
       // 注意视频比例！
       video = createCapture(VIDEO);
-      video.size(542, 406);
+      video.size(windowWidth, windowHeight);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);

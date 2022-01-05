@@ -18,7 +18,7 @@
       createCanvas(375, 812);
       // 注意视频比例！
       video = createCapture(VIDEO);
-      video.size(375, 600);
+      video.size(375, 540);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);

@@ -9,24 +9,20 @@
   // To store the classification
   let label = "";
 
-
-
-
-
   // Load the model first
   function preload() {
       classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   }
 
   function setup() {
-      createCanvas(windowWidth, windowHeight);
+      createCanvas(375, 812);
       // 注意视频比例！
       video = createCapture(VIDEO);
-      video.size(windowWidth, windowHeight);
+      video.size(375, 600);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);
-      // Start classifying
+      // 开始识别
       classifyVideo();
   }
 

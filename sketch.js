@@ -9,16 +9,20 @@
   // To store the classification
   let label = "";
 
+
+
+
+
   // Load the model first
   function preload() {
       classifier = ml5.imageClassifier(imageModelURL + 'model.json');
   }
 
   function setup() {
-      createCanvas(320, 260);
-      // Create the video
+      createCanvas(281, 406);
+      // 注意视频比例！
       video = createCapture(VIDEO);
-      video.size(320, 240);
+      video.size(542, 406);
       video.hide();
 
       flippedVideo = ml5.flipImage(video);
@@ -56,6 +60,10 @@
       // The results are in an array ordered by confidence.
       // console.log(results[0]);
       label = results[0].label;
-      // Classifiy again!
+      // Classify again!
       classifyVideo();
+  }
+
+  function clickEvent() {
+      alert('results[0]');
   }

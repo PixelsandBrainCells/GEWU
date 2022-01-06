@@ -61,5 +61,6 @@
   }
 
   function clickEvent() {
-      alert('results[0]');
+      console.log(results)
+      alert(JSON.gotResult(results));
   }

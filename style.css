@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 #shot {
@@ -12,5 +12,5 @@
     border: none;
     position: absolute;
     left: 157.5px;
-    top: 580px;
+    top: 400px;
 }

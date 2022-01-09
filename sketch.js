@@ -15,7 +15,7 @@
   }
 
   function setup() {
-      createCanvas(375, 812);
+      createCanvas(375, 600);
       // 注意视频比例！
       video = createCapture(VIDEO);
       video.size(375, 540);
@@ -32,7 +32,7 @@
       image(flippedVideo, 0, 0);
 
       // Draw the label
-      fill(255);
+      fill(0);
       textSize(16);
       textAlign(CENTER);
       text(label, width / 2, height - 4);
@@ -58,9 +58,9 @@
       label = results[0].label;
       // Classify again!
       classifyVideo();
+
   }
 
   function clickEvent() {
-      console.log(results)
-      alert(JSON.gotResult(results));
+      alert(JSON.stringify(label))
   }
